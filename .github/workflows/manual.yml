@@ -35,4 +35,5 @@ jobs:
       run: |
         bash
         npm install npm install -g @oclif/dev-cli
+        cd twilio-cli
         npx oclif-dev pack:win
