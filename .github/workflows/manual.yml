@@ -31,9 +31,10 @@ jobs:
         git clone https://github.com/twilio/twilio-cli.git
         cd twilio-cli
         
-    - name: bash workflow
+    - name: package windows exe
+      shell: bash
       run: |
-        bash
-        npm install npm install -g @oclif/dev-cli
+        npm install -g @oclif/dev-cli
         cd twilio-cli
+        make install
         npx oclif-dev pack:win
