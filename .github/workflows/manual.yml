@@ -30,10 +30,9 @@ jobs:
       run: |
         git clone https://github.com/twilio/twilio-cli.git
         cd twilio-cli
-        |
+        
     - name: bash workflow
       run: |
         bash
         npm install npm install -g @oclif/dev-cli
         npx oclif-dev pack:win
-        |
