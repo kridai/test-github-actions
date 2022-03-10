@@ -30,3 +30,10 @@ jobs:
         cd twilio-cli
         make install
         npx oclif-dev pack:win
+        
+  test-windows-1:
+    runs-on: windows-latest
+    steps:
+      - run: choco install gh
+      - run: gh version
+    
