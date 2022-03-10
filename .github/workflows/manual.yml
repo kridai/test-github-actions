@@ -22,6 +22,5 @@ jobs:
       - name: Install Scoop
         run: | 
           runas /user:Administrator
-          "Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
-          echo '$env:SCOOP\shims' | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append"
+          "Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')"
     
